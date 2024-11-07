@@ -1,0 +1,23 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+  int i,n,arr[100];
+  int key;
+  cout << "Enter the key sum " << endl;
+  cin >> key;
+  cout << "Enter the number of element in array = " << endl;
+  cin >> n;
+  cout << "Enter the element of array = " << endl;
+  for(i=0;i<n;i++){
+    cin >> arr[i];
+  }
+for (i=0;i<n;i++){
+  for(int j=i+1;j<n;j++){
+    if(arr[i]+arr[j]==key){
+      cout << "Pair of sum is " << arr[i] << " " << arr[j] << endl;
+      
+    }
+  }
+}
+}
