@@ -1,0 +1,27 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+bool perfectnumber(int  num){
+    int sum=0;
+  for(int i =1;i<=(num/2);i++){
+        if (num%i==0){
+            sum =sum+i;
+        }
+    }
+    
+    if(sum==num){
+        return true;
+    }
+    else 
+    return  false;
+    }
+int main(){
+    int num ,temp,sum=0;
+    cout<<"Enter the number ";
+    cin>>num;
+  bool result = perfectnumber(num);
+if(result ==1){
+    cout<< num <<"is perfect number";
+}
+else cout<< num <<"is not  perfect number";
+}
