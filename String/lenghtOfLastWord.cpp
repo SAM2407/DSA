@@ -6,19 +6,16 @@ int main(){
     int i =0;
     int count =0;
     int n = s.length();
-  for(int i =0;i<n;i++){
-        if(s[n] == ' '){
-            n--;}
-    else break;
+  while(n>=0 && s[n]==' '){
+      n--;
   }
-  
      for(int i=n-1;i>=0;i--){
         if(s[i] == ' ') {
-            cout<<count;
-          
+          break;
         }
         else{
             count++;
         }
     }
+     cout<<count;
 }
